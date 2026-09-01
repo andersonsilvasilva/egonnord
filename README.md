@@ -6,6 +6,8 @@ Site em produção: [egonnord.com.br](https://egonnord.com.br)
 
 Desenvolvido por **HighTech Tecnologia**.
 
+![Screenshot do site Egon Nord](docs/screenshot.png)
+
 ## Desenvolvimento local
 
 Requer Node.js e npm.
