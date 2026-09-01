@@ -1,27 +1,31 @@
-# Welcome to your Lovable project
+# Egon Nord — Jardinagem & Paisagismo
 
-This project was built with [Lovable](https://lovable.dev).
+Site institucional da Egon Nord, empresa de jardinagem e paisagismo com atendimento em Curitiba e região.
 
-## Build with Lovable
+Site em produção: [egonnord.com.br](https://egonnord.com.br)
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Desenvolvido por **HighTech Tecnologia**.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## Desenvolvimento local
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Requer Node.js e npm.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
 
-## Built with
+## Scripts disponíveis
+
+- `npm run dev` — servidor de desenvolvimento
+- `npm run build` — build de produção padrão (Cloudflare Workers)
+- `npm run build:hostinger` — gera uma build 100% estática, pronta para hospedagem sem Node/Workers (Hostinger)
+- `npm run deploy:hostinger` — publica a build estática no servidor da Hostinger via SSH (com backup automático da versão anterior)
+- `npm run lint` / `npm run format` — checagem e formatação de código
+
+O deploy para a Hostinger requer a chave SSH do projeto configurada em `~/.ssh/config` com o host `egon-nord-hostinger`. Detalhes em `scripts/build-hostinger.py` e `scripts/deploy-hostinger.py`.
+
+## Stack
 
 - TanStack Start
 - TypeScript
